@@ -8,7 +8,7 @@ body {
 
 #banner {
   z-index: 1;
-  background: url("https://drive.google.com/file/d/1OceL0ZvSgs0TZGCNEaW9tbuTe8dyOHjB/view?usp=sharing");
+  background: url("../img/main.JPG");
   min-height: 90vh;
   background-attachment: fixed;
   background-repeat: no-repeat;
