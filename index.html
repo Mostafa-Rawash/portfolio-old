@@ -2,40 +2,131 @@
 <html lang="en">
 
 <head>
-          <meta charset="UTF-8">
-          <meta http-equiv="X-UA-Compatible" content="IE=edge">
-          <meta name="viewport" content="width=device-width, initial-scale=1.0">
-          <title>Mostafa portfolio</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mostafa portfolio</title>
 
 
-          <!-- css link -->
-          <link rel="stylesheet" href="./css/style.css">
-          <!-- bootstrap css cdn  -->
-          <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-                    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
-                    crossorigin="anonymous">
+    <!-- bootstrap css cdn  -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- fontawesome cdn -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 
+    <!-- css link -->
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
-          <nav class="nav nav-fill">
-                    <li class="nav-item">
-                              <a class="nav-link active" href="#">Item 1</a>
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#banner">Rawash</a>
+            <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#navbar_collapse"
+                aria-controls="navbar_collapse" aria-expanded="false" aria-label="Toggle navigation"></button>
+            <div class="collapse navbar-collapse" id="navbar_collapse">
+                <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#banner">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Item 2</a>
+                        <a class="nav-link" href="#about">about</a>
                     </li>
-          </nav>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">contact</a>
+                    </li>
+                </ul>
+
+            </div>
+
+        </div>
+    </nav>
 
 
 
-          <!-- bootstrap js cdn  -->
-          <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-                    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-                    crossorigin="anonymous"></script>
-          <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"
-                    integrity="sha384-LtrjvnR4Twt/qOuYxE721u19sVFLVSA4hf/rRt6PrZTmiPltdZcI7q7PXQBYTKyf"
-                    crossorigin="anonymous"></script>
+    <div class="container-fluid   d-flex " id="banner">
+        <div class="row text-center  w-100">
+            <div class="col-12 col-md-6 m-auto ">
+                <div class="pb-5">
+
+                    <p class="text-light d-inline h2 ">Hi all, I'm <h1 class="d-inline text-danger" id="name">Mostafa
+                            Rawash</h1>
+                    </p>
+                </div>
+                <div>
+                    <button class="btn border-danger border text-white p-3" id="visit" type=" button ">See my
+                        work <i class=" fa fa-arrow-circle-right text-danger" aria-hidden="true"></i>
+                        <button class="btn border-danger border text-white p-3" id="contact" type=" button ">contact
+                            with me <i class=" fa fa-arrow-circle-right text-danger" aria-hidden="true"></i>
+                        </button>
+                </div>
+            </div>
+            <!-- <div class="col-12 col-md-6"> -->
+            <!-- </div> -->
+        </div>
+    </div>
+    <div class="container" id="about">
+        <h2 class="p-5 text-light"> About</h2>
+   
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="social_icon position-fixed float-left">
+        <a href="https://www.facebook.com/Mostafa.Rawwash" target="_blank"
+            class="fab fa-facebook-f text-danger h2 my-3"></a>
+        <a href="https://www.linkedin.com/in/mostafa-r-25736599/" target="_blank"
+            class="fab fa-linkedin text-danger h2 my-3" aria-hidden="true"></a>
+        <a href="https://github.com/Mostafa-Rawash/" target="_blank" class="fab fa-github text-danger h2 my-3"
+            aria-hidden="true"></a>
+
+    </div>
+
+    <div class="container-fluid bg-dark" id="skills">
+        <div class="row">
+            <div class="col">
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 10%"
+                        aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+
+            </div>
+            <div class="col">
+                <h1></h1>
+            </div>
+            <div class="col">
+                <h1></h1>
+            </div>
+        </div>
+    </div>
+    <!-- Jquere cdn -->
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+        integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <!-- main js file -->
+    <script src="js/index.js"></script>
+    <!-- bootstrap js cdn  -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"
+        integrity="sha384-LtrjvnR4Twt/qOuYxE721u19sVFLVSA4hf/rRt6PrZTmiPltdZcI7q7PXQBYTKyf"
+        crossorigin="anonymous"></script>
 </body>
 
 

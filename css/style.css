@@ -1,0 +1,62 @@
+/* .nav{
+          height: 4rem;
+} */
+
+body {
+  background-color: black;
+}
+
+#banner {
+  z-index: 1;
+  background: url("../img/main.jpg");
+  min-height: 90vh;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: right;
+  margin-right: 10rem;
+  background-size: contain;
+}
+
+.btn {
+  border: 2px !important;
+}
+#visit:hover {
+  box-shadow: -10px -10px 2px #dc354696;
+}
+#contact:hover {
+  box-shadow: 10px 10px 2px #dc354696;
+}
+
+#about{
+  background-color: rgba(255, 255, 255, 0.212);
+}
+
+
+#skills{
+  height: 60vh;
+}
+
+
+.social_icon{
+  z-index: 100  ;
+  inline-size: min-content;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+}
+.social_icon a:hover{
+  text-decoration: none;
+}
+
+
+
+
+
+h2:before{
+  content:'';
+  position:absolute;
+  z-index: 100;
+  background:#dc3545;
+  width: 50px;
+  height:5px;
+  }
