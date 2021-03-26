@@ -3,12 +3,13 @@
 } */
 
 body {
+  color: white;
   background-color: black;
 }
 
 #banner {
   z-index: 1;
-  background: url("./img/main/jpg");
+  background: url("../img/main.JPG");
   min-height: 90vh;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -17,8 +18,8 @@ body {
   background-size: contain;
 }
 
-.btn {
-  border: 2px !important;
+.line_between {
+  border-left-color: #dc3545;
 }
 #visit:hover {
   box-shadow: -10px -10px 2px #dc354696;
@@ -27,36 +28,73 @@ body {
   box-shadow: 10px 10px 2px #dc354696;
 }
 
-#about{
+#about {
   background-color: rgba(255, 255, 255, 0.212);
 }
 
-
-#skills{
-  height: 60vh;
+#skills {
+  min-height: 60vh;
+  background-color: rgba(240, 248, 255, 0.404);
 }
 
-
-.social_icon{
-  z-index: 100  ;
+.social_icon {
+  z-index: 100;
   inline-size: min-content;
   top: 50%;
   left: 20px;
   transform: translateY(-50%);
 }
-.social_icon a:hover{
+.social_icon a:hover {
   text-decoration: none;
+}
+
+h2:before {
+  content: "";
+  position: absolute;
+  z-index: 100;
+  background: #dc3545;
+  width: 50px;
+  height: 2px;
+}
+
+.card {
+  box-shadow: 2px 2px 5px black;
+  width: 30%;
+}
+.card:hover {
+  transform: scale(
+    1.1
+  ); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+.list-group-item {
+  background-color: #0000;
+  border: 0;
+}
+
+
+.mix{
+  display: inline-block;
+  margin: 6px;
+}
+.mix:nth-child(){
+  width: 100%;
+}
+
+.gallery_button{
+  background: #0000;
+  border: 0;
+}
+.gallery_button:focus{
+  outline: 0;  
 }
 
 
 
 
 
-h2:before{
-  content:'';
-  position:absolute;
-  z-index: 100;
-  background:#dc3545;
-  width: 50px;
-  height:5px;
-  }
+#contact_me {
+  min-height: 60vh;
+  background-color: rgba(240, 248, 255, 0.404);
+}
+
+
