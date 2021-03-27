@@ -1,12 +1,10 @@
-/* .nav{
-          height: 4rem;
-} */
-
+*{
+  font-family: 'Roboto Mono', monospace;
+}
 body {
   color: white;
   background-color: black;
 }
-
 #banner {
   z-index: 1;
   background: url("../img/main.JPG");
@@ -17,9 +15,8 @@ body {
   margin-right: 10rem;
   background-size: contain;
 }
-
 .line_between {
-  border-left-color: #dc3545;
+  border-left: 2px solid  #dc3545 ;
 }
 #visit:hover {
   box-shadow: -10px -10px 2px #dc354696;
@@ -27,16 +24,13 @@ body {
 #contact:hover {
   box-shadow: 10px 10px 2px #dc354696;
 }
-
 #about {
   background-color: rgba(255, 255, 255, 0.212);
 }
-
 #skills {
   min-height: 60vh;
   background-color: rgba(240, 248, 255, 0.404);
 }
-
 .social_icon {
   z-index: 100;
   inline-size: min-content;
@@ -47,19 +41,12 @@ body {
 .social_icon a:hover {
   text-decoration: none;
 }
-
 h2:before {
   content: "";
   position: absolute;
-  z-index: 100;
   background: #dc3545;
   width: 50px;
-  height: 2px;
-}
-
-.card {
-  box-shadow: 2px 2px 5px black;
-  width: 30%;
+  height: 3px;
 }
 .card:hover {
   transform: scale(
@@ -70,31 +57,28 @@ h2:before {
   background-color: #0000;
   border: 0;
 }
-
-
-.mix{
+.mix {
   display: inline-block;
   margin: 6px;
 }
-.mix:nth-child(){
-  width: 100%;
+.mix img{
+  max-height: 50vh;
 }
-
-.gallery_button{
+.mix img:hover{
+  transform: scale(1.1);
+}
+.gallery_button {
   background: #0000;
   border: 0;
 }
-.gallery_button:focus{
-  outline: 0;  
+.gallery_button:focus {
+  outline: 0;
 }
-
-
-
-
-
 #contact_me {
-  min-height: 60vh;
+
   background-color: rgba(240, 248, 255, 0.404);
 }
 
-
+input{
+  color: white;
+}
