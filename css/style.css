@@ -80,5 +80,5 @@ h2:before {
 }
 
 input{
-  color: white;
+  color: white !important;
 }
