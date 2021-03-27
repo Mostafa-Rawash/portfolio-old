@@ -1,0 +1,392 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+html h1 {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 70px;
+  font-weight: bold;
+  z-index: 2;
+  color: #ff305b;
+}
+
+html h2:not(.hello) {
+  text-align: center;
+  font-size: 50px;
+  font-weight: 900;
+  font-family: "Source Sans Pro", sans-serif;
+  padding: 3vh 0 30px 0;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+html h2:not(.hello):before {
+  content: "";
+  width: 180px;
+  position: absolute;
+  border-bottom: solid 1px #f00;
+  bottom: 6px;
+  z-index: 1;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+html h2:not(.hello):after {
+  border: solid 1px #f00;
+  border-width: 1px 0;
+  height: 13px;
+  content: "";
+  width: 90px;
+  position: absolute;
+  bottom: 0px;
+  z-index: 4;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+html h3 {
+  font-size: 30px;
+  font-weight: 600;
+  margin: 0 0 10px;
+  font-family: "Source Sans Pro", sans-serif;
+  z-index: 2;
+}
+
+html h4 {
+  font-size: 26px;
+  text-transform: capitalize;
+  color: #fff;
+  z-index: 2;
+}
+
+html a {
+  text-decoration: none;
+  color: black;
+}
+
+html button:not(.btn) {
+  font-size: 100%;
+  font: inherit;
+  border-radius: 4px;
+  border-style: unset;
+  background: #ff305b;
+  color: white;
+  font-weight: 450;
+  padding: 10px 24px;
+  margin-right: 15px;
+}
+
+#header {
+  background-color: rgba(15, 8, 8, 0.486);
+  position: fixed;
+  height: 3rem;
+  width: 100vw;
+  z-index: 5;
+}
+
+#header .container {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#header .container #logo {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+#header .container #logo a {
+  color: #ff305b;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 2rem;
+  height: 100%;
+  position: absolute;
+}
+
+#header .container #item {
+  position: relative;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+#header .container #item ul {
+  height: 100%;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#header .container #item ul li a {
+  margin: auto 10px;
+  color: white;
+  height: 100%;
+}
+
+#header .container #item ul li a:hover,
+#header .container #item ul li a .active {
+  color: #ff305b;
+}
+
+#banner {
+  background-color: black;
+  background-image: url(../img/main.JPG);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 100vh;
+  z-index: 0;
+}
+
+#banner h3 {
+  color: white;
+  z-index: 1;
+}
+
+#banner .overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100vh;
+  z-index: 0;
+}
+
+#banner * {
+  z-index: 10;
+}
+
+#about {
+  margin: 2rem;
+  position: relative;
+}
+
+#about .about_img .img__border {
+  border: solid 6px red;
+  border-radius: 10px;
+}
+
+#about .about_img .img__border img {
+  position: absolute;
+  border-radius: 10px;
+  left: 30px;
+  top: 30px;
+}
+
+#about .about_text h2 {
+  font-style: "Source Sans Pro", sans-serif;
+  position: relative;
+  padding-left: 10px;
+  line-height: 25px;
+}
+
+#about .about_text h2:before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 4px;
+  background: #f00;
+  left: 0;
+}
+
+#about .about_text p {
+  border-bottom: dashed;
+  border-bottom-width: thin;
+}
+
+#about .about_text span {
+  font-weight: 700;
+}
+
+#our-services {
+  background-color: #f1f1f1;
+  padding: 15px 0;
+}
+
+#our-services .single-item:hover {
+  background-color: #fff;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+  -webkit-box-shadow: 3px 3px 3px 3px rgba(128, 128, 128, 0.5);
+          box-shadow: 3px 3px 3px 3px rgba(128, 128, 128, 0.5);
+}
+
+.Portfolio {
+  margin: 20px;
+}
+
+.Portfolio li {
+  cursor: pointer;
+}
+
+.Portfolio li:hover, .Portfolio li.active {
+  color: #ff305b;
+}
+
+#counter {
+  background-color: #f1f1f1;
+  padding: 50px;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+#contact .row {
+  padding: 1em 0;
+}
+
+#contact .col {
+  left: 0;
+  padding: 0;
+}
+
+#contact input {
+  height: 3em;
+}
+
+#contact .name {
+  padding-right: 1sem;
+}
+
+#contact .mail {
+  padding-left: 1em;
+}
+
+#contact .massege {
+  height: 10em;
+}
+
+#feedback .client-img {
+  z-index: 1;
+}
+
+#feedback img {
+  border-radius: 100px;
+}
+
+#feedback p {
+  font-size: 20px;
+  font-style: italic;
+}
+
+#feedback .fa {
+  font-size: 19px;
+}
+
+#feedback .client-feedback {
+  padding: 70px;
+  border-radius: 10px;
+  background-color: #f1f1f1;
+}
+
+#feedback .client-feedback:after {
+  border-color: #ff305b rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
+  -o-border-image: none;
+  border-image: none;
+  border-style: solid;
+  border-width: 191px;
+  content: "";
+  height: 72px;
+  left: -199px;
+  position: absolute;
+  top: 0;
+  -webkit-transform: translateX(0%);
+  transform: translateX(0%);
+  width: 77px;
+  z-index: 0;
+}
+
+#feedback .owl-dots {
+  text-align: center;
+}
+
+#feedback .owl-dots .owl-dot {
+  width: 15px;
+  height: 15px;
+  border: solid 1px;
+  border-radius: 100%;
+  border-color: #ff305b;
+  margin: 13px 5px 0 5px;
+}
+
+#feedback .owl-dots .owl-dot.active {
+  width: 30px;
+  height: 15px;
+  border-radius: 40%;
+  background-color: #ff305b;
+}
+
+#ourBlog {
+  background-color: #f1f1f1;
+}
+
+#ourBlog .blog {
+  background-color: #f1f1f1;
+  height: 100%;
+}
+
+#ourBlog .blog .blog_content {
+  background-color: white;
+  height: 100%;
+  margin: 2px;
+  border: 1px solid #ff305b;
+  border-radius: 10px;
+}
+
+#ourBlog .blog-text {
+  margin: 10px;
+}
+
+#ourBlog a {
+  font-size: 20px;
+}
+
+#ourBlog p {
+  font-size: 20px;
+}
+
+#ourBlog h3 {
+  font-size: 25px;
+}
+
+#ourBlog .blog-media * {
+  width: 100%;
+  height: 15em;
+}
+
+#footer {
+  background-color: #333333;
+  height: 20vh;
+}
+
+.icon {
+  padding: 20px 0;
+  font-size: 30px;
+  color: #ff305b;
+}
+
+.star-icon {
+  color: #f1c30d;
+}
+/*# sourceMappingURL=style.css.map */
