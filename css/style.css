@@ -82,3 +82,13 @@ h2:before {
 input{
   color: white !important;
 }
+
+@media (max-width: 575.98px) { 
+  .social_icon {
+    bottom: 0px;
+    top: auto;
+    transform: none ;
+  }
+
+
+}
