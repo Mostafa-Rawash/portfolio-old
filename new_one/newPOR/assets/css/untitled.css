@@ -1,0 +1,21 @@
+.fa.fa-arrow-circle-down {
+  bottom: 0px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 20px;
+  width: 17.85938px;
+  margin: 0px;
+  padding: 0px;
+  font-size: 25px;
+  color: var(--bs-yellow);
+  text-align: center;
+}
+
+.masthead {
+  /*align-content: center;*/
+  /*top: 50%;*/
+  /*position: absolute;*/
+  /*transform: translateY(-50%);*/
+}
+
